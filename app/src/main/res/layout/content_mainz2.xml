@@ -1,0 +1,56 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout"
+    android:background="?attr/colorSecondaryVariant"
+
+    android:paddingTop="50dp">
+
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+    android:visibility="gone"
+        android:id="@+id/emptycase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empty! Click the Add button (+) to create new"
+        android:fontFamily="@font/product_font_family"
+        android:textSize="13dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="italic"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/emptycase"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/colorSecondaryVariant"
+                tools:context=".ui.MainActivity" />
+
+
+
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Holo.Light.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>

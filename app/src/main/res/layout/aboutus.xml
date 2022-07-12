@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSecondaryVariant"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.IFarMart.PopupOverlay" />
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorSecondaryVariant"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+        <LinearLayout
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:background="?attr/colorSecondaryVariant"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="25dp"
+                android:src="@drawable/bassured1"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="?attr/colorOnPrimary"
+                android:fontFamily="@font/product_font_family"
+                android:gravity="left"
+                android:justificationMode="inter_word"
+                android:textStyle="bold"
+                android:text="iFarMart is a digital market or store that connects farmers (producers) with consumers and retailers based on location and product preferences."
+                android:textSize="15dp"
+
+                />
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:background="?attr/colorOnPrimary" />
+
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="?attr/colorOnPrimary"
+                android:fontFamily="@font/product_font_family"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:text="App developed by Team Gbolissimo Technologies for the Google IO 2022 Extended Ibadan Hackathon"
+                android:textSize="15dp"
+                android:justificationMode="inter_word"
+                />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="?attr/colorOnPrimary"
+                android:fontFamily="@font/product_font_family"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:text="gbolissimotechnologies@gmail.com"
+                android:textSize="15dp"
+            />
+            <TextView
+                android:visibility="gone"
+                android:fontFamily="@font/product_font_family"
+                android:id="@+id/nd_linkfd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="https://gbolissimo.com"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/whatsapp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/whatsappbutton"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="?attr/colorOnPrimary"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:visibility="gone"
+                android:text="+2348166203641"
+                android:textSize="15dp"
+
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

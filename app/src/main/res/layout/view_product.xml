@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSecondaryVariant"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.IFarMart.PopupOverlay" />
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorSecondaryVariant"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="?attr/colorSecondaryVariant"
+            >
+            <ImageView
+
+                android:id="@+id/pd_image"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                />
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="?attr/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/linecolor"
+                        android:text="Product Name:"
+                        android:fontFamily="@font/product_font_family"
+                        android:textSize="15sp"
+                        />
+
+
+                    <TextView
+                        android:textColor="?attr/colorOnPrimary"
+                        android:id="@+id/pn"
+                        android:text="2 Acres of Cassava"
+                        android:fontFamily="@font/product_font_family"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/caseinfo_edit_co"
+                        android:layout_gravity="end"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_edit"
+
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="?attr/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/linecolor"
+                        android:text="Product Description/ Quantity:"
+                        android:fontFamily="@font/product_font_family"
+                        android:textSize="15sp"
+                        />
+
+
+                    <TextView
+                        android:textColor="?attr/colorOnPrimary"
+                        android:id="@+id/q"
+                        android:text="There is 2 acres of cassava plantation for sale at Awe Farm"
+                        android:fontFamily="@font/product_font_family"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        />
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/caseinfo_edit_ju"
+                        android:layout_gravity="end"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_edit"
+
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="?attr/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/linecolor"
+                        android:text="Farm/Store Address:"
+                        android:fontFamily="@font/product_font_family"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:textColor="?attr/colorOnPrimary"
+                        android:id="@+id/fa"
+                        android:text="Adelana Farm, Awe, Oyo"
+                        android:fontFamily="@font/product_font_family"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        />
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/caseinfo_edit_sn"
+                        android:layout_gravity="end"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_edit"
+
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="?attr/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/linecolor"
+                        android:text="Price Range:"
+                        android:fontFamily="@font/product_font_family"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:textColor="?attr/colorOnPrimary"
+                        android:id="@+id/p"
+                        android:text="N20,000 - N40,000"
+                        android:fontFamily="@font/product_font_family"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        />
+                    <ImageView
+                        android:visibility="gone"
+
+                        android:layout_gravity="end"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_edit"
+
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="?attr/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/linecolor"
+                        android:text="Seller:"
+                        android:fontFamily="@font/product_font_family"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:textColor="?attr/colorOnPrimary"
+                        android:id="@+id/s"
+                        android:text="Adegbola Gbolahan"
+                        android:fontFamily="@font/product_font_family"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        />
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:layout_width="50dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/no_pix"
+                        android:id="@+id/seller_pix"
+                        android:layout_height="50dp"
+                        />
+
+                    <ImageView
+android:visibility="gone"
+                        android:layout_gravity="end"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_edit"
+
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="?attr/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/linecolor"
+                        android:text="Seller's Contact 1:"
+                        android:fontFamily="@font/product_font_family"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:textColor="?attr/colorOnPrimary"
+                        android:id="@+id/sc1"
+                        android:text="08166203641"
+                        android:fontFamily="@font/product_font_family"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:inputType="phone"
+                        android:autoLink="phone"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp">
+                    <ImageView
+                        android:id="@+id/call1"
+                        android:layout_gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_call"
+
+                        />
+                        <ImageView
+                            android:id="@+id/message1"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_message"
+
+                            />
+                        <ImageView
+                            android:id="@+id/chat1"
+                            android:layout_gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/social_whatsapp"
+
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="?attr/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/linecolor"
+                        android:text="Seller's Contact 2:"
+                        android:fontFamily="@font/product_font_family"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:textColor="?attr/colorOnPrimary"
+                        android:id="@+id/sc2"
+                        android:text="08166203641"
+                        android:fontFamily="@font/product_font_family"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:inputType="phone"
+                        android:autoLink="phone"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp">
+                        <ImageView
+                            android:id="@+id/call2"
+                            android:layout_gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_call"
+
+                            />
+                        <ImageView
+                            android:id="@+id/message2"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_message"
+
+                            />
+                        <ImageView
+                            android:id="@+id/chat2"
+                            android:layout_gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/social_whatsapp"
+
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="?attr/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/linecolor"
+                        android:text="Seller's Email Address:"
+                        android:fontFamily="@font/product_font_family"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:textColor="?attr/colorOnPrimary"
+                        android:id="@+id/se"
+                        android:text="Gbolissimo@gmail.com"
+                        android:fontFamily="@font/product_font_family"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:inputType="textEmailAddress"
+                        android:autoLink="email"
+                        />
+                    <ImageView
+                        android:visibility="gone"
+
+                        android:layout_gravity="end"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_edit"
+
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="?attr/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/linecolor"
+                        android:text="Seller's Verification Status:"
+                        android:fontFamily="@font/product_font_family"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:textColor="?attr/colorOnPrimary"
+                        android:id="@+id/sv"
+
+                        android:fontFamily="@font/product_font_family"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        />
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/vimage"
+                        android:layout_gravity="end"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_verified"
+
+                        />
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/vimage2"
+                        android:layout_gravity="end"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_notverified"
+
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="?attr/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/linecolor"
+                        android:text="Post Time:"
+                        android:fontFamily="@font/product_font_family"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:textColor="?attr/colorOnPrimary"
+                        android:id="@+id/pt"
+                        android:text="2 min ago"
+                        android:fontFamily="@font/product_font_family"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        />
+                    <ImageView
+android:visibility="gone"
+
+                        android:layout_gravity="end"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_verified"
+
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_marginBottom="40dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/product_font_family"
+                android:id="@+id/callnow"
+                android:text="CALL"
+                android:textSize="12dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/backgroundbutton5"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:id="@+id/delete"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_gravity="right"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_delete"/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

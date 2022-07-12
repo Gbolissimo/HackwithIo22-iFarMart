@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="10dp"
+    android:id="@+id/itcard"
+    app:cardBackgroundColor="?attr/colorPrimary"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+
+    <LinearLayout
+        android:id="@+id/ncard"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="100sp"
+        android:layout_height="120sp"
+
+        android:gravity="left"
+        android:layout_gravity="left">
+
+        <ImageView
+            android:id="@+id/ivProduct"
+            android:layout_width="match_parent"
+            android:src="@drawable/house2"
+            android:layout_height="match_parent"
+
+
+
+
+            />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="left"
+            android:text="Vehicle Insurance"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/product_font_family"/>
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+
+            android:layout_gravity="center_horizontal"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="First Bank Nig Ltd Vehicle Insurance Cover shsshs shshsh bsbsb sbsbs sbsbs sbsbs sbsb sbsb sbsb sbs sbsb sbsb sbsb sbsb sbsb sbsb sbsb shshs shs"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:fontFamily="@font/product_font_family"/>
+
+        <TextView
+
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvAm"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:padding="1dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:text="5 Min Ago"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="14sp"
+            android:fontFamily="@font/product_font_family"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvTym"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            tools:text="Adewale Oladipupo"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="15sp"
+            android:fontFamily="@font/product_font_family"/>
+
+        <TextView
+            android:id="@+id/case_nad"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="NAD: 25/05/2021"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/product_font_family"/>
+
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

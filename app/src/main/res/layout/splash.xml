@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+
+
+
+    android:background="?attr/colorPrimary"
+    android:layout_gravity="center"
+    android:id="@+id/lin_lay"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/splash"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/bassured2"
+
+        />
+
+    <TextView
+        android:fontFamily="@font/product_font_family"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Companies and Allied Matters Act 2020"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:textStyle="bold"
+        android:typeface="serif"/>
+
+    <TextView
+android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gbolissimo Technologies"
+        android:fontFamily="@font/product_font_family"
+        android:textSize="13dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:typeface="serif"/>
+
+
+</LinearLayout>
+
+
