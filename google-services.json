@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "421480517276",
+    "project_id": "ifarmart",
+    "storage_bucket": "ifarmart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421480517276:android:5ccd043b2948c646496759",
+        "android_client_info": {
+          "package_name": "com.gbolissimo.ifarmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421480517276-vui1m35aisfdr4ri0lgvd7glv7pp7cia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9NUh0515uOwpHWoip6fb9ysZ_FF11I5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421480517276-vui1m35aisfdr4ri0lgvd7glv7pp7cia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
